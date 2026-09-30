@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AVARA · Lista de espera</title>
+  <meta name="description" content="AVARA llega muy pronto. Sumate a la lista de espera y comprá antes que nadie la colección Inara.">
+  <meta name="theme-color" content="#f3ece6">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="AVARA · Activewear premium. Muy pronto.">
+  <meta property="og:description" content="Sumate a la lista de espera y comprá antes que nadie la colección Inara.">
+  <meta property="og:image" content="img/avara-1206.jpg">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --crema: #f3ece6;
+      --crema-2: #ebe1d7;
+      --arena: #d9c9b8;
+      --marron: #4a3932;
+      --marron-900: #2e231f;
+      --tinta: #2b211d;
+      --tinta-2: #5d4f48;
+      --dorado: #c8953d;
+      --dorado-claro: #e2c38f;
+      --serif: "Marcellus", Georgia, serif;
+      --sans: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+      color-scheme: light;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--crema); color: var(--tinta); font-family: var(--sans); font-weight: 400; -webkit-font-smoothing: antialiased; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    :focus-visible { outline: 2px solid var(--dorado); outline-offset: 3px; }
+    .wrap { width: min(1180px, 100% - 40px); margin: 0 auto; }
+
+    /* Wordmark: replica el de la etiqueta colgante */
+    .wordmark { font-family: var(--serif); letter-spacing: .38em; text-indent: .38em; text-transform: uppercase; line-height: 1; }
+    .wordmark small { display: block; font-family: var(--sans); font-size: .28em; letter-spacing: .6em; text-indent: .6em; margin-top: .7em; font-weight: 500; }
+    .eyebrow { font-size: 12px; letter-spacing: .32em; text-transform: uppercase; font-weight: 500; }
+
+    /* ---------- Barra superior ---------- */
+    .top { position: absolute; top: 0; left: 0; right: 0; z-index: 5; padding: 22px 0; text-align: center; }
+    .top .wordmark { font-size: 26px; color: #fff; text-shadow: 0 1px 12px rgba(0,0,0,.25); }
+
+    /* ---------- Portada ---------- */
+    .hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; color: #fff; overflow: hidden; background: var(--marron); }
+    .hero picture, .hero img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+    .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(46,35,31,.35) 0%, rgba(46,35,31,0) 20%, rgba(46,35,31,0) 36%, rgba(46,35,31,.62) 58%, rgba(46,35,31,.9) 100%); }
+    .hero-copy { position: relative; z-index: 2; padding: 0 22px 44px; max-width: 560px; }
+    .hero-copy .eyebrow { color: var(--dorado-claro); line-height: 1.8; }
+    .hero h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(36px, 9vw, 64px); line-height: 1.05; margin: 14px 0 16px; letter-spacing: .01em; }
+    .hero p { font-size: 16px; line-height: 1.6; margin: 0 0 26px; color: rgba(255,255,255,.9); font-weight: 300; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 30px;
+      border: 1px solid transparent; border-radius: 0; font-family: var(--sans); font-size: 13px; font-weight: 600; letter-spacing: .2em;
+      text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background .2s, color .2s, border-color .2s;
+    }
+    .btn-light { background: var(--crema); color: var(--marron-900); }
+    .btn-light:hover { background: #fff; }
+    .btn-dark { background: var(--marron); color: var(--crema); width: 100%; }
+    .btn-dark:hover { background: var(--marron-900); }
+    .btn-line { border-color: currentColor; color: var(--marron); background: transparent; }
+    .btn-line:hover { background: var(--marron); color: var(--crema); }
+    .hero small { display: block; margin-top: 14px; font-size: 12px; color: rgba(255,255,255,.75); letter-spacing: .04em; }
+
+    @media (min-width: 900px) {
+      .hero { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; background: var(--crema); color: var(--tinta); }
+      .hero::after { display: none; }
+      .hero .media { position: relative; order: 2; }
+      .hero .media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; }
+      .hero-copy { align-self: center; padding: 120px 64px 80px; max-width: 620px; justify-self: end; }
+      .hero-copy .eyebrow { color: #8a6a3a; }
+      .hero p { color: var(--tinta-2); }
+      .hero small { color: var(--tinta-2); }
+      .btn-light { background: var(--marron); color: var(--crema); }
+      .btn-light:hover { background: var(--marron-900); }
+      .top .wordmark { color: var(--marron); text-shadow: none; }
+      .top { text-align: left; padding: 34px 0; }
+      .top .wrap { width: min(1180px, 100% - 128px); }
+    }
+
+    /* ---------- Franja ---------- */
+    .strip { background: var(--marron); color: var(--crema); overflow: hidden; white-space: nowrap; padding: 15px 0; }
+    .strip-track { display: inline-flex; gap: 42px; animation: strip 38s linear infinite; font-size: 12px; letter-spacing: .28em; text-transform: uppercase; }
+    .strip-track span::after { content: "✦"; color: var(--dorado-claro); margin-left: 42px; font-size: 10px; }
+    @keyframes strip { to { transform: translateX(-50%); } }
+
+    /* ---------- Por qué sumarse ---------- */
+    .why { padding: 88px 0 72px; }
+    .section-title { font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 6vw, 46px); line-height: 1.1; margin: 12px 0 0; }
+    .why .eyebrow, .inara .eyebrow { color: #8a6a3a; }
+    .cards { display: grid; gap: 1px; margin-top: 44px; background: var(--arena); border: 1px solid var(--arena); }
+    .card { background: var(--crema); padding: 30px 26px; }
+    .card .n { font-family: var(--serif); font-size: 15px; color: #8a6a3a; letter-spacing: .1em; }
+    .card h3 { font-family: var(--serif); font-weight: 400; font-size: 24px; margin: 14px 0 10px; }
+    .card p { margin: 0; line-height: 1.65; color: var(--tinta-2); font-size: 15px; }
+    @media (min-width: 760px) { .cards { grid-template-columns: repeat(3, 1fr); } .card { padding: 40px 34px; } }
+
+    .perk { margin-top: 28px; padding: 18px 22px; border: 1px solid var(--dorado); text-align: center; font-size: 14px; letter-spacing: .06em; color: var(--marron); }
+    .perk[hidden] { display: none; }
+
+    /* ---------- Colección Inara ---------- */
+    .inara { padding: 24px 0 96px; }
+    .inara-head { display: grid; gap: 18px; align-items: end; }
+    .inara-head p { margin: 0; line-height: 1.7; color: var(--tinta-2); font-size: 15px; max-width: 520px; }
+    @media (min-width: 900px) { .inara-head { grid-template-columns: 1fr 1fr; } }
+    .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 40px; }
+    .gallery figure { margin: 0; position: relative; overflow: hidden; background: var(--crema-2); aspect-ratio: 3 / 4; }
+    .gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease; }
+    .gallery figure:hover img { transform: scale(1.04); }
+    @media (min-width: 900px) { .gallery { grid-template-columns: repeat(4, 1fr); gap: 14px; } }
+    .specs { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 26px; font-size: 13px; letter-spacing: .08em; color: var(--tinta-2); }
+    .specs b { font-weight: 600; color: var(--tinta); }
+    .swatches { display: inline-flex; gap: 6px; vertical-align: middle; margin-left: 8px; }
+    .swatches i { width: 14px; height: 14px; border-radius: 50%; display: inline-block; border: 1px solid rgba(0,0,0,.15); }
+
+    /* ---------- Lista de espera ---------- */
+    .join { background: var(--marron); color: var(--crema); }
+    .join-grid { display: grid; }
+    .join-media { min-height: 360px; position: relative; }
+    .join-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
+    .join-body { padding: 64px 22px 72px; max-width: 560px; }
+    .join .eyebrow { color: var(--dorado-claro); }
+    .join h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(32px, 7vw, 48px); line-height: 1.08; margin: 12px 0 14px; }
+    .join-body > p { margin: 0 0 32px; line-height: 1.65; color: rgba(243,236,230,.82); font-size: 15px; }
+    @media (min-width: 900px) {
+      .join-grid { grid-template-columns: 1fr 1fr; }
+      .join-media { min-height: 100%; }
+      .join-body { padding: 96px 64px; }
+    }
+    form { display: grid; gap: 16px; }
+    .field label { display: block; font-size: 11px; letter-spacing: .24em; text-transform: uppercase; margin-bottom: 8px; color: rgba(243,236,230,.8); font-weight: 500; }
+    .field label span { text-transform: none; letter-spacing: .02em; opacity: .7; }
+    .input {
+      width: 100%; min-height: 54px; padding: 14px 16px; background: transparent; border: 1px solid rgba(243,236,230,.35); border-radius: 0;
+      color: var(--crema); font-family: var(--sans); font-size: 16px; transition: border-color .2s;
+    }
+    .input::placeholder { color: rgba(243,236,230,.4); }
+    .input:focus { outline: none; border-color: var(--dorado-claro); }
+    .input[aria-invalid="true"] { border-color: #f0a58f; }
+    .ig { position: relative; }
+    .ig .input { padding-left: 34px; }
+    .ig::before { content: "@"; position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: rgba(243,236,230,.6); font-size: 16px; }
+    .check { display: flex; gap: 12px; align-items: flex-start; font-size: 13px; line-height: 1.55; color: rgba(243,236,230,.8); cursor: pointer; }
+    .check input { width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--dorado); flex: none; }
+    .join .btn-dark { background: var(--crema); color: var(--marron-900); margin-top: 6px; }
+    .join .btn-dark:hover { background: #fff; }
+    .join .btn-dark[disabled] { opacity: .6; cursor: wait; }
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    .error { min-height: 20px; font-size: 13px; color: #f7c2b2; margin: 0; }
+    .fine { font-size: 12px; color: rgba(243,236,230,.6); line-height: 1.5; margin: 4px 0 0; }
+
+    .thanks[hidden], form[hidden] { display: none; }
+    .thanks { animation: in .5s ease; }
+    .thanks h3 { font-family: var(--serif); font-weight: 400; font-size: 34px; margin: 0 0 12px; }
+    .thanks p { line-height: 1.65; color: rgba(243,236,230,.85); margin: 0 0 26px; }
+    .thanks .actions { display: grid; gap: 12px; }
+    .thanks .btn-line { color: var(--crema); }
+    .thanks .btn-line:hover { background: var(--crema); color: var(--marron-900); }
+    @keyframes in { from { opacity: 0; transform: translateY(8px); } }
+
+    /* ---------- Pie ---------- */
+    footer { padding: 56px 0 44px; text-align: center; }
+    footer .wordmark { font-size: 30px; color: var(--marron); }
+    footer nav { display: flex; justify-content: center; gap: 28px; margin: 28px 0 18px; font-size: 12px; letter-spacing: .24em; text-transform: uppercase; }
+    footer nav a { text-decoration: none; border-bottom: 1px solid transparent; padding-bottom: 3px; }
+    footer nav a:hover { border-color: var(--dorado); }
+    footer p { margin: 0; font-size: 12px; color: var(--tinta-2); letter-spacing: .06em; }
+
+    /* ---------- Revelado al hacer scroll ---------- */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .9s ease, transform .9s ease; }
+    .reveal.on { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .strip-track { animation: none; }
+      .gallery img { transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top">
+    <div class="wrap"><div class="wordmark" aria-label="AVARA Activewear">AVARA</div></div>
+  </header>
+
+  <!-- PORTADA -->
+  <section class="hero" aria-label="Presentación">
+    <div class="media">
+      <img class="bg" src="img/avara-1206.jpg" alt="Modelo con el top y el short de la colección Inara en marrón" fetchpriority="high">
+    </div>
+    <div class="hero-copy">
+      <div class="eyebrow">Próximamente · Colección Inara</div>
+      <h1>Activewear premium, hecho para moverte.</h1>
+      <p>AVARA llega muy pronto. Sumate a la lista de espera y comprá antes que nadie, con todos los talles y colores disponibles.</p>
+      <a class="btn btn-light" href="#lista" data-cta="hero">Quiero acceso anticipado</a>
+      <small>Solo te pedimos tu nombre y tu email.</small>
+    </div>
+  </section>
+
+  <!-- FRANJA -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span>Colección Inara</span><span>Talles S a XL</span><span>Envíos a todo el país</span><span>Activewear premium</span><span>Muy pronto</span>
+      <span>Colección Inara</span><span>Talles S a XL</span><span>Envíos a todo el país</span><span>Activewear premium</span><span>Muy pronto</span>
+    </div>
+  </div>
+
+  <!-- POR QUÉ SUMARSE -->
+  <section class="why" aria-labelledby="why-t">
+    <div class="wrap">
+      <div class="eyebrow reveal">La lista de espera</div>
+      <h2 class="section-title reveal" id="why-t">Las primeras en tenerlo.</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="n">01</div>
+          <h3>Acceso anticipado</h3>
+          <p>La lista entra a la tienda antes de que abra al público. Elegís primera, con todo el stock disponible.</p>
+        </article>
+        <article class="card reveal">
+          <div class="n">02</div>
+          <h3>Enterate primero</h3>
+          <p>Te avisamos por mail el día del lanzamiento y cada vez que llegue algo nuevo. Nada de spam.</p>
+        </article>
+        <article class="card reveal">
+          <div class="n">03</div>
+          <h3>Diseñado para vos</h3>
+          <p>Talles S a XL, telas suaves y elásticas, y un calce que acompaña el movimiento en el gym, en yoga y en el día a día.</p>
+        </article>
+      </div>
+      <!-- Beneficio de lanzamiento: queda oculto hasta que Brady lo defina (ver CONFIG.beneficio abajo) -->
+      <p class="perk reveal" id="perk" hidden></p>
+    </div>
+  </section>
+
+  <!-- COLECCIÓN INARA -->
+  <section class="inara" aria-labelledby="inara-t">
+    <div class="wrap">
+      <div class="inara-head">
+        <div>
+          <div class="eyebrow reveal">La colección insignia</div>
+          <h2 class="section-title reveal" id="inara-t">Inara</h2>
+        </div>
+        <p class="reveal">Leggings, shorts, top, sports bra y campera, pensados para combinarse entre sí y armar el look completo. Cada prenda lleva el monograma A de AVARA en champagne gold.</p>
+      </div>
+      <div class="gallery">
+        <figure class="reveal"><img src="img/avara-1225.jpg" alt="Campera Inara en marrón con el monograma A" loading="lazy"></figure>
+        <figure class="reveal"><img src="img/avara-1235.jpg" alt="Top y leggings Inara en color oscuro, modelo sentada" loading="lazy"></figure>
+        <figure class="reveal"><img src="img/avara-1244.jpg" alt="Campera Inara en negro con el monograma A" loading="lazy"></figure>
+        <figure class="reveal"><img src="img/avara-1209.jpg" alt="Look completo Inara en marrón: campera y leggings" loading="lazy"></figure>
+      </div>
+      <div class="specs reveal">
+        <span><b>Tela</b> 68% nylon · 32% spandex</span>
+        <span><b>Talles</b> S · M · L · XL</span>
+        <span><b>Colores</b>
+          <span class="swatches" aria-label="Negro, night purple, forest green y marrón">
+            <i style="background:#141414" title="Negro"></i><i style="background:#2c2340" title="Night purple"></i><i style="background:#2f4034" title="Forest green"></i><i style="background:#5a3a2e" title="Marrón"></i>
+          </span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LISTA DE ESPERA -->
+  <section class="join" id="lista" aria-labelledby="join-t">
+    <div class="join-grid">
+      <div class="join-media"><img src="img/avara-1129.jpg" alt="Prendas AVARA colgadas en un perchero con un cartel que dice coming soon" loading="lazy"></div>
+      <div class="join-body">
+        <div class="eyebrow">Acceso anticipado</div>
+        <h2 id="join-t">Sumate a la lista</h2>
+        <p>Dejanos tus datos y te avisamos antes que a nadie cuándo abre la tienda.</p>
+
+        <form id="form" novalidate>
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input class="input" id="nombre" name="nombre" autocomplete="given-name" required maxlength="60" placeholder="Tu nombre">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input class="input" id="email" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="120" placeholder="tu@email.com">
+          </div>
+          <div class="field">
+            <label for="instagram">Instagram <span>(opcional)</span></label>
+            <div class="ig"><input class="input" id="instagram" name="instagram" autocomplete="off" maxlength="40" placeholder="tuusuario"></div>
+          </div>
+          <div class="hp" aria-hidden="true"><label>No completar <input name="empresa" tabindex="-1" autocomplete="off"></label></div>
+          <label class="check"><input type="checkbox" id="ok" name="ok" required> <span>Quiero recibir por email el acceso anticipado y las novedades de AVARA. Me puedo dar de baja cuando quiera.</span></label>
+          <p class="error" id="error" role="alert"></p>
+          <button class="btn btn-dark" type="submit" id="send">Sumarme a la lista</button>
+          <p class="fine">Tus datos se usan solo para avisarte del lanzamiento. No los compartimos con nadie.</p>
+        </form>
+
+        <div class="thanks" id="thanks" hidden aria-live="polite">
+          <div class="eyebrow">Ya estás adentro</div>
+          <h3 id="thanks-t">¡Listo!</h3>
+          <p id="thanks-p">Te vamos a escribir antes del lanzamiento. Mientras tanto, seguinos en Instagram para ver todo lo que se viene.</p>
+          <div class="actions">
+            <a class="btn btn-dark" href="https://www.instagram.com/avarawear1/" target="_blank" rel="noopener" data-cta="instagram">Seguir a @avarawear1</a>
+            <a class="btn btn-line" id="share" href="#" target="_blank" rel="noopener" data-cta="share">Pasáselo a una amiga</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wordmark">AVARA<small>Activewear</small></div>
+    <nav aria-label="Redes"><a href="https://www.instagram.com/avarawear1/" target="_blank" rel="noopener">Instagram</a></nav>
+    <p>© 2026 AVARA · Argentina</p>
+  </footer>
+
+  <script>
+    // ---------------- Configuración ----------------
+    const CONFIG = {
+      // URL del Apps Script que guarda los anotados en la planilla. Vacío = modo maqueta (no envía nada).
+      endpoint: "",
+      // Pixel de Meta de AVARA (ya instalado en la tienda). Solo se carga en el dominio real, nunca en pruebas.
+      pixelId: "1543366020326614",
+      pixelHosts: ["avarawear.ar", "lista.avarawear.ar", "www.avarawear.ar"],
+      // Beneficio de lanzamiento para la lista (ej: "Envío gratis en tu primera compra"). Vacío = no se muestra.
+      beneficio: ""
+    };
+
+    // ---------------- Origen del anotado (QR, anuncios, influencers) ----------------
+    // Ej: lista.avarawear.ar/?ref=sofia  ·  ?ref=tarjeta  ·  ?utm_source=meta&utm_campaign=coming-soon
+    const origen = (() => {
+      const q = new URLSearchParams(location.search);
+      const data = { ref: q.get("ref") || "", utm_source: q.get("utm_source") || "", utm_medium: q.get("utm_medium") || "", utm_campaign: q.get("utm_campaign") || "", utm_content: q.get("utm_content") || "" };
+      try {
+        if (Object.values(data).some(Boolean)) sessionStorage.setItem("avara-origen", JSON.stringify(data));
+        else return JSON.parse(sessionStorage.getItem("avara-origen") || "null") || data;
+      } catch (e) { /* sin storage: seguimos con lo de la URL */ }
+      return data;
+    })();
+
+    // ---------------- Pixel de Meta ----------------
+    const pixelOn = CONFIG.pixelId && CONFIG.pixelHosts.includes(location.hostname);
+    if (pixelOn) {
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq("init", CONFIG.pixelId);
+      fbq("track", "PageView");
+    }
+
+    // ---------------- Beneficio ----------------
+    if (CONFIG.beneficio) {
+      const perk = document.getElementById("perk");
+      perk.textContent = "✦ " + CONFIG.beneficio + " ✦";
+      perk.hidden = false;
+    }
+
+    // ---------------- Formulario ----------------
+    const form = document.getElementById("form");
+    const err = document.getElementById("error");
+    const btn = document.getElementById("send");
+    const emailOk = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      err.textContent = "";
+      const f = form.elements;
+      [f.nombre, f.email].forEach((i) => i.removeAttribute("aria-invalid"));
+      const nombre = f.nombre.value.trim();
+      const email = f.email.value.trim().toLowerCase();
+      const instagram = f.instagram.value.trim().replace(/^@+/, "").replace(/^https?:\/\/(www\.)?instagram\.com\//i, "").replace(/\/.*$/, "");
+      if (!nombre) { f.nombre.setAttribute("aria-invalid", "true"); f.nombre.focus(); err.textContent = "Contanos tu nombre."; return; }
+      if (!emailOk(email)) { f.email.setAttribute("aria-invalid", "true"); f.email.focus(); err.textContent = "Revisá el email, parece que falta algo."; return; }
+      if (!f.ok.checked) { err.textContent = "Marcá la casilla para que podamos escribirte."; return; }
+      if (f.empresa.value) { done(nombre); return; } // bot: se descarta en silencio
+
+      const lead = { nombre, email, instagram, ...origen, pagina: location.href.split("?")[0], fecha: new Date().toISOString() };
+      btn.disabled = true; btn.textContent = "Sumándote…";
+      try {
+        if (CONFIG.endpoint) {
+          // text/plain evita el preflight de CORS con Apps Script
+          const r = await fetch(CONFIG.endpoint, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(lead) });
+          if (!r.ok) throw new Error("HTTP " + r.status);
+        } else {
+          console.info("[maqueta] anotado de prueba (no se envía):", lead);
+        }
+        if (pixelOn) fbq("track", "Lead", { content_name: "Lista de espera", ...(origen.ref ? { ref: origen.ref } : {}) });
+        done(nombre);
+      } catch (e2) {
+        err.textContent = "No pudimos anotarte. Probá de nuevo en un momento.";
+        btn.disabled = false; btn.textContent = "Sumarme a la lista";
+      }
+    });
+
+    function done(nombre) {
+      form.hidden = true;
+      const t = document.getElementById("thanks");
+      document.getElementById("thanks-t").textContent = `¡Listo, ${nombre.split(" ")[0]}!`;
+      const url = location.origin + location.pathname;
+      document.getElementById("share").href = "https://wa.me/?text=" + encodeURIComponent("Mirá AVARA, una marca de activewear premium que lanza muy pronto. Anotate en la lista de espera: " + url);
+      t.hidden = false;
+      t.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+
+    // ---------------- Revelado ----------------
+    const io = "IntersectionObserver" in window ? new IntersectionObserver((es) => es.forEach((x) => { if (x.isIntersecting) { x.target.classList.add("on"); io.unobserve(x.target); } }), { threshold: .12 }) : null;
+    document.querySelectorAll(".reveal").forEach((el) => io ? io.observe(el) : el.classList.add("on"));
+  </script>
+</body>
+</html>
